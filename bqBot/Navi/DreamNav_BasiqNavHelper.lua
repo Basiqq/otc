@@ -1,7 +1,7 @@
 schedule(200, function()
   setDefaultTab("Nav")
   addSeparator("separator")
-  addLabel("", "bqq")
+  addLabel("", "bq")
   addLabel("", "Nav Helper:")
   addSeparator("separator")
 
