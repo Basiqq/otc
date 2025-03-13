@@ -1,0 +1,102 @@
+AutolootSwap < Panel
+  layout:
+    type: verticalBox
+    fit-children: true
+
+  Panel
+    height: 20
+    type: verticalBox
+    fit-children: true
+    margin-top: 2
+    
+    Label
+      text: "  AutoLoot"
+      text-align: center
+      margin-top: 2
+      anchors.top: parent.top
+      anchors.left: parent.left
+      anchors.right: parent.right
+      font: sans-bold-16px
+      color: #2986cc
+      height: 23
+
+  Panel
+    height: 17
+    type: horizontalBox
+    fit-children: true
+    margin-top: 2
+
+    Button
+      id: ShowLoot_Button
+      text: Show Loot Table
+      anchors.horizontalCenter: parent.horizontalCenter
+      anchors.top: parent.top
+      anchors.left: parent.left
+      margin-left: 5
+      margin-right: 5
+      margin-top: 1
+      size: 15 17
+
+  Panel
+    height: 17
+    type: horizontalBox
+    fit-children: true
+    margin-top: 2
+
+    Button
+      id: Clear_Button
+      text: Clear All
+      anchors.horizontalCenter: parent.horizontalCenter
+      anchors.top: parent.top
+      anchors.left: parent.left
+      margin-left: 5
+      margin-right: 5
+      margin-top: 1
+      size: 15 17
+
+  Panel
+    height: 35
+    fit-children: true
+    margin-top: 2
+
+    ScrollablePanel
+      margin-top: 2
+      margin-left: 5
+      id: items
+      anchors.fill: parent
+      vertical-scrollbar: scroll
+      layout:
+        type: grid
+        cell-size: 32 32
+        flow: true
+      
+    SmallScrollBar
+      id: scroll
+      anchors.top: prev.top
+      anchors.bottom: prev.bottom
+      anchors.right: parent.right
+      step: 25
+      pixels-scroll: true
+
+  Panel
+    height: 17
+    type: horizontalBox
+    fit-children: true
+    margin-top: 2
+
+    Button
+      id: LootUIButton
+      text: Add Item by Name
+      anchors.horizontalCenter: parent.horizontalCenter
+      anchors.top: parent.top
+      anchors.left: parent.left
+      margin-left: 25
+      margin-right: 25
+      margin-top: 1
+      size: 15 17
+
+  Panel
+    height: 4
+    type: horizontalBox
+    fit-children: true
+    margin-top: 2

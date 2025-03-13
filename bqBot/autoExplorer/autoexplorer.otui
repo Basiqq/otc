@@ -1,0 +1,34 @@
+AutoExplorerAvoid < Panel
+  layout:
+    type: verticalBox
+    fit-children: true
+
+  Panel
+    height: 20
+    margin-top: 2
+    type: horizontalBox
+
+    BotItem
+      id: avoiditemid
+      margin-top: 2
+      anchors.horizontalCenter: parent.horizontalCenter
+
+  Label
+    text-align: center
+    text: ""
+    font: sans-bold-16px
+    margin-top: 0
+    color: #00FFFF
+    height: 17
+
+AutoExplorerTitle < Panel
+  layout:
+    type: verticalBox
+    fit-children: true
+
+  Label
+    text-align: center
+    text: Auto Explorer
+    font: sans-bold-16px
+    color: #00ff09
+    height: 23

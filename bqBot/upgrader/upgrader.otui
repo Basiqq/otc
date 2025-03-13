@@ -1,0 +1,65 @@
+UpgraderPanel < Panel
+  layout:
+    type: verticalBox
+    fit-children: true
+
+  Panel
+    height: 20
+    margin-top: 2
+    type: horizontalBox
+
+    Label
+      margin-top: 2
+      margin-left: 2
+      text: Upgrader
+      anchors.top: parent.top
+      anchors.left: parent.left
+      text-wrap: true
+      text-auto-resize: true
+      text-align: left
+  
+    BotItem
+      id: item_1
+      margin-top: 2
+      anchors.top: parent.top
+      anchors.right: parent.right
+      margin-right: 2
+
+  Panel
+    height: 20
+    type: verticalBox
+    fit-children: true
+    margin-top: 2
+    
+    Label
+      text: Upgraded Items
+      margin-top: 10
+      anchors.top: parent.top
+      anchors.left: parent.left
+      anchors.right: parent.right
+      text-wrap: true
+      text-auto-resize: true
+      text-align: left
+
+  Panel
+    height: 68
+    fit-children: true
+    margin-top: 2
+
+    ScrollablePanel
+      margin-top: 5
+      id: items
+      anchors.fill: parent
+      vertical-scrollbar: scroll
+      layout:
+        type: grid
+        cell-size: 34 34
+        flow: true
+      
+    SmallScrollBar
+      id: scroll
+      anchors.top: prev.top
+      anchors.bottom: prev.bottom
+      anchors.right: parent.right
+      step: 25
+      pixels-scroll: true

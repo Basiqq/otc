@@ -1,0 +1,29 @@
+ManaItemPanel < Panel
+  layout:
+    type: verticalBox
+    fit-children: true
+
+  Label
+    text-align: center
+    text: Mana Item
+    font: sans-bold-16px
+    color: #00FFFF
+    height: 23
+
+  Panel
+    height: 20
+    margin-top: 2
+    type: horizontalBox
+
+    BotItem
+      id: manaItems
+      margin-top: 2
+      anchors.horizontalCenter: parent.horizontalCenter
+
+  Label
+    text-align: center
+    text: ""
+    font: sans-bold-16px
+    margin-top: 0
+    color: #00FFFF
+    height: 17

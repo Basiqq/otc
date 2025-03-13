@@ -1,0 +1,29 @@
+TargetRunePanel < Panel
+  layout:
+    type: verticalBox
+    fit-children: true
+
+  Label
+    text-align: center
+    text: Rune
+    font: sans-bold-16px
+    color: #ff0000
+    height: 23
+
+  Panel
+    height: 20
+    margin-top: 2
+    type: horizontalBox
+
+    BotItem
+      id: targetRuneItems
+      margin-top: 2
+      anchors.horizontalCenter: parent.horizontalCenter
+
+  Label
+    text-align: center
+    text: ""
+    font: sans-bold-16px
+    margin-top: 0
+    color: #ff0000
+    height: 17

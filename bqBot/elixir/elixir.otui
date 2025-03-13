@@ -1,0 +1,29 @@
+BuffPotPanel < Panel
+  layout:
+    type: verticalBox
+    fit-children: true
+
+  Label
+    text-align: center
+    text: 
+    font: sans-bold-16px
+    color: #BFA500
+    height: 2
+
+  Panel
+    height: 20
+    margin-top: 2
+    type: horizontalBox
+
+    BotItem
+      id: buffPotions
+      margin-top: 2
+      anchors.horizontalCenter: parent.horizontalCenter
+
+  Label
+    text-align: center
+    text: ""
+    font: sans-bold-16px
+    margin-top: 0
+    color: #BFA500
+    height: 17

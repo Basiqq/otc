@@ -1,0 +1,64 @@
+playerWhitelistLabel < Label
+  background-color: alpha
+  text-offset: 2 0
+  focusable: true
+
+  $focus:
+    background-color: #00000055
+
+playerWhitelistPanel < Panel
+  layout:
+    type: verticalBox
+    fit-children: true
+
+  Label
+    text-align: center
+    text: Whitelist   
+    margin-top: 5
+
+  Panel
+    id: listPanel
+    height: 60
+    margin-top: 2
+
+    TextList
+      id: list
+      anchors.fill: parent
+      vertical-scrollbar: listScrollbar
+      margin-right: 15
+      focusable: false
+      auto-focus: first
+      margin-top: 10
+      
+    VerticalScrollBar
+      id: listScrollbar
+      anchors.top: parent.top
+      anchors.bottom: parent.bottom
+      anchors.right: parent.right
+      pixels-scroll: true
+      step: 8
+
+  Panel
+    id: buttons
+    height: 20
+    margin-top: 2
+
+    Button
+      id: add
+      margin-top: 2
+      text: Add
+      anchors.top: parent.top
+      anchors.bottom: parent.bottom
+      anchors.left: parent.left
+      margin-left: 10
+      width: 70
+  
+    Button
+      id: remove
+      margin-top: 2
+      text: Remove
+      anchors.top: parent.top
+      anchors.bottom: parent.bottom
+      anchors.right: parent.right
+      margin-right: 10
+      width: 70

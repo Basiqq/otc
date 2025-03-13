@@ -1,0 +1,109 @@
+SMTargetSelectionLabel < Label
+  background-color: alpha
+  text-offset: 2 0
+  focusable: true
+
+  $focus:
+    background-color: #00000055
+
+SMTargetSelectionPanel < Panel
+  layout:
+    type: verticalBox
+    fit-children: true
+
+  Label
+    text-align: center
+    text: Madness Attacker  
+    margin-top: 5
+
+  Panel
+    id: SMTSInfoPanel
+    height: 20
+    margin-top: 0
+
+    Button
+      id: Information
+      !tooltip: tr('Creatures will be prioritized from the first in the list to the last. Click Add to add creatures. You can add multiple creatures at once with a comma separation in the names.')
+      margin-top: 2
+      margin-bottom: 4
+      text: Mouse Over for Details
+      anchors.top: parent.top
+      anchors.bottom: parent.bottom
+      anchors.left: parent.left
+      margin-left: 4
+      width: 165
+
+  Panel
+    id: SMTSlistPanel
+    height: 60
+    margin-top: 0
+
+    TextList
+      id: SMTSlist
+      anchors.fill: parent
+      vertical-scrollbar: SMTSlistScrollbar
+      margin-right: 15
+      focusable: false
+      auto-focus: last
+      margin-top: 10
+
+    VerticalScrollBar
+      id: SMTSlistScrollbar
+      anchors.top: parent.top
+      anchors.bottom: parent.bottom
+      anchors.right: parent.right
+      pixels-scroll: true
+      step: 8
+
+  Panel
+    id: SMTSbuttons
+    height: 20
+    margin-top: 2
+
+    Button
+      id: SMTSadd
+      margin-top: 2
+      text: Add
+      anchors.top: parent.top
+      anchors.bottom: parent.bottom
+      anchors.left: parent.left
+      margin-left: 10
+      width: 70
+  
+    Button
+      id: SMTSremove
+      margin-top: 2
+      text: Remove
+      anchors.top: parent.top
+      anchors.bottom: parent.bottom
+      anchors.right: parent.right
+      margin-right: 10
+      width: 70
+
+  Panel
+    id: SMTSRange
+    height: 22
+    margin-top: 2
+
+    Label
+      id: RangeLabel
+      text-align: Left
+      text: "Target Range:"
+      anchors.top: parent.top
+      anchors.bottom: parent.bottom
+      anchors.left: parent.left
+      margin-top: 2
+      margin-left: 30
+      margin-bottom: 2
+
+    BotTextEdit
+      id: Range
+      anchors.top: parent.top
+      anchors.bottom: parent.bottom
+      anchors.left: parent.left
+      width: 25
+      height: 17
+      anchors.left: RangeLabel.right
+      margin-top: 5
+      margin-left: 8
+      margin-bottom: 1
