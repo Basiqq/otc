@@ -133,7 +133,7 @@ addIcon("followIcon", {
   BotServer.send("ToggleMacro", {name="FLW", isOn=followScript})
   storage.followScript = followScript
 end)
-
+end)
 
 addSeparator("separator")
 local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Extra/bosstimers.lua'
