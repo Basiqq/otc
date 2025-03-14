@@ -154,7 +154,7 @@ local function getStandTime()
   return now - standTime
 end
 
-ultimateFollow = macro(50, "Follow", function()
+ultimateFollow = macro(50, "FLW", function()
   if not leader then
   
   local leaderPos = leaderPositions[posz()]
@@ -200,7 +200,7 @@ ultimateFollow = macro(50, "Follow", function()
   if distance > 1 and not path then
     handleUsing()
   elseif distance > 2 then
-    if getStandTime() > 500 then
+    if getStandTime() > 300 then
         autoWalk(lpos, 40, parameters)
     delay(200)
     end
