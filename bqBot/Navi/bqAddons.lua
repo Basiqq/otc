@@ -123,11 +123,11 @@ end)
 
 doorButton:setColor("red")
 
--- Follow script toggle via icon with built-in hotkey
+setDefaultTab("bq")
 addIcon("followIcon", { 
   item = { id = 23686 }, 
   text = "Follow", 
-  hotkey = storage.followHotkey or "F12"  -- Store hotkey for persistence
+  hotkey = storage.followHotkey or "F12"
 }, function(icon, isOn)
   followScript = isOn
   BotServer.send("ToggleMacro", {name="FLW", isOn=followScript})
