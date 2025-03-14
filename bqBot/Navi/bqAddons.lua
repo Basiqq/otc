@@ -527,3 +527,4 @@ addSeparator("Separator")
 --setDefaultTab("bq")
 setDefaultTab("bq")
 local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Extra/bosstimers.lua'
+modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
