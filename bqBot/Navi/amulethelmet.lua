@@ -1,4 +1,5 @@
 setDefaultTab("bq")
+addSeparator("separator")
 local amuletCounts = {}
 local connectedPlayers = {}
 
@@ -104,3 +105,4 @@ local helmetUnequipBtn = UI.Button("Unequip Helmet", function()
   BotServer.send("unequipHelmet", true)
 end)
 helmetUnequipBtn:setColor("red")
+addSeparator("separator")
