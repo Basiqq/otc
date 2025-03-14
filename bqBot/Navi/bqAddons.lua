@@ -139,7 +139,7 @@ addSeparator("separator")
 local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Extra/bosstimers.lua'
 modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
 addSeparator("separator")
-local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Extra/bosstimers.lua'
+local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Extra/amulethelmet.lua'
 modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
 
 setDefaultTab("Cave")
