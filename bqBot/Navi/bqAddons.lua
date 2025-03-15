@@ -138,6 +138,7 @@ end)
 addSeparator("separator")
 local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Navi/amulethelmet.lua'
 modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
+setDefaultTab("Tools")
 addSeparator("separator")
 local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Extra/bosstimers.lua'
 modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
@@ -418,6 +419,9 @@ end)
 
 UI.Separator()
 
+setDefaultTab("Tools")
+local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Extra/exiva.lua'
+modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
 
 
-addSeparator("Separator")
+
