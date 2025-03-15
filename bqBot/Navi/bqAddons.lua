@@ -134,15 +134,23 @@ addIcon("followIcon", {
   storage.followScript = followScript
 end)
 end)
-
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 addSeparator("separator")
 local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Navi/amulethelmet.lua'
 modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
-setDefaultTab("Tools")
+
 addSeparator("separator")
 local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Extra/bosstimers.lua'
 modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
 
+addSeparator("separator")
+local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Extra/dungeon.lua'
+modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 setDefaultTab("Cave")
 addSeparator("separator")
 local anchorPos = nil
@@ -202,7 +210,7 @@ Panel
     margin-top: 3
     text-align: center
     width: 130
-    !text: tr('Fight Back (Revide)')
+    !text: tr('Fight Back')
     font: verdana-11px-rounded
 
   Button

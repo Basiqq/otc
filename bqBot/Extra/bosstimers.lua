@@ -1,3 +1,4 @@
+setDefaultTab("Tools")
 local bossNames = {"Gorgons", "Harpies", "Echidna", "Chimera", "Talos", "Scylla", "Charredon", "Azureon"}
 local storageKey = "BossTimers"
 storage[storageKey] = storage[storageKey] or { enabled = false }
@@ -117,7 +118,7 @@ onTextMessage(function(mode, text)
     if storage[storageKey].enabled then  
         for _, boss in ipairs(bossNames) do  
             if storage[storageKey][boss] and text:match(boss .. ": Boss is accessible now") then  
-                playSound("/sounds/magnum.ogg")  
+                playSound("/sounds/alarm.ogg")  
             end  
         end  
     end  
