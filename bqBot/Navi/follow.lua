@@ -200,7 +200,7 @@ ultimateFollow = macro(50, "FLW", function()
   if distance > 1 and not path then
     handleUsing()
   elseif distance > 2 then
-    if getStandTime() > 300 then
+    if getStandTime() > 500 then
         autoWalk(lpos, 40, parameters)
     delay(200)
     end
