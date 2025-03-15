@@ -1,9 +1,7 @@
+setDefaultTab("bq")
 followName = "autofollow"
 if not storage[followName] then storage[followName] = { player = 'name'} end
 local toFollowPos = {}
-
-setDefaultTab("Tools")
-
 leaderPositions = {}
 local leaderDirections = {}
 local leader
