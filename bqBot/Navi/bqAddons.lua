@@ -1,11 +1,11 @@
 setDefaultTab("bq")
-local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Navi/follow.lua'
+local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Navi/followOld.lua'
 modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
 schedule(200, function()
   setDefaultTab("bq")
   -- UI text box for hotkey assignment
   UI.Label("Follow Hotkey:")
-  UI.TextEdit(storage.followHotkey or "F12", function(widget, text)
+  UI.TextEdit(storage.followHotkey or "End", function(widget, text)
     storage.followHotkey = text -- Save hotkey setting
   end)
 
@@ -127,7 +127,7 @@ setDefaultTab("bq")
 addIcon("followIcon", { 
   item = { id = 23686 }, 
   text = "Follow", 
-  hotkey = storage.followHotkey or "F12"
+  hotkey = storage.followHotkey or "End"
 }, function(icon, isOn)
   followScript = isOn
   BotServer.send("ToggleMacro", {name="FLW", isOn=followScript})
