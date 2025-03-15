@@ -1,5 +1,5 @@
 setDefaultTab("bq")
-local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Navi/followOld.lua'
+local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Navi/follow.lua'
 modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
 schedule(200, function()
   setDefaultTab("bq")
