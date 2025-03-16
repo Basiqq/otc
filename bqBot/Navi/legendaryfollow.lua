@@ -247,7 +247,7 @@ ultimateFollow = macro(50, "FLW", function()
   end
 end)
 
-UI.Label("Follow:")
+UI.Label("Follows:")
 UI.TextEdit(storage.followLeader or "Basiq", function(widget, text)
   storage.followLeader = text
   leader = getCreatureByName(text)
