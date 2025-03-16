@@ -116,7 +116,7 @@ local doorButton
 
 doorButton = UI.Button("Doors", function()
   doorScript = not doorScript
-  BotServer.send("ToggleMacro", {name="doors", isOn=doorScript})
+  BotServer.send("ToggleMacro", {name="Doors", isOn=doorScript})
 
   doorButton:setColor(doorScript and "green" or "red")
 end)
