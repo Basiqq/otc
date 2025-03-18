@@ -147,10 +147,6 @@ local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot
 modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
 
 addSeparator("separator")
-local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Extra/anchor.lua'
-modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
-
-addSeparator("separator")
 local link = 'https://raw.githubusercontent.com/Basiqq/otc/refs/heads/main/bqBot/Extra/retaliate.lua'
 modules.corelib.HTTP.get(link, function(script) assert(loadstring(script))() end);
 
