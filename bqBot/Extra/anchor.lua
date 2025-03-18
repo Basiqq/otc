@@ -2,7 +2,7 @@ setDefaultTab("Cave")
 addSeparator("separator")
 local anchorPos = nil
 
-macro(500, "Anchor Position", function()
+macro(500, "Hold Position", function()
   if not anchorPos then return end
 
   local player = g_game.getLocalPlayer()
@@ -25,7 +25,7 @@ macro(500, "Anchor Position", function()
   end
 end)
 
-UI.Button("Set Anchor", function()
+UI.Button("Set Position", function()
   local player = g_game.getLocalPlayer()
   if not player then return end
 
@@ -35,14 +35,3 @@ UI.Button("Set Anchor", function()
   anchorPos = playerPos
   modules.game_textmessage.displayGameMessage("Anchor set at: [" .. anchorPos.x .. ", " .. anchorPos.y .. ", " .. anchorPos.z .. "]")
 end)
-
-UI.Button("Remove Anchor", function()
-  anchorPos = nil
-  modules.game_textmessage.displayGameMessage("Anchor removed.")
-end)
-
-
-
-
-
-addSeparator("separator")

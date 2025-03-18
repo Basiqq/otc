@@ -1,4 +1,4 @@
--- AUTO REVIDE / FIGHT BACK / ATTACK PLAYER PK (REVIDAR)
+-- AUTO REVIDE / FIGHT BACK / ATTACK PLAYER PK
 setDefaultTab("Tools")
 
 -- ATTENTION:
@@ -17,7 +17,7 @@ Panel
     margin-top: 3
     text-align: center
     width: 130
-    !text: tr('Fight Back (Revide)')
+    !text: tr('Fight Back')
     font: verdana-11px-rounded
 
   Button
